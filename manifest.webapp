@@ -1,0 +1,27 @@
+{
+  "name": "Demo",
+  "description": "Demo",
+  "type": "certified",
+  "launch_path": "/index.html",
+  "developer": {
+    "name": "Borja Salguero",
+    "url": "https://github.com/borjasalguero"
+  },
+  "permissions": {
+    "telephony":{},
+    "mobileconnection":{},
+    "sms":{}
+  },
+  "locales": {
+    "en-US": {
+      "name": "Privileged App",
+      "description": "Privileged Demo App"
+    }
+  },
+  "default_locale": "en-US",
+  "icons": {
+    "120": "/style/icons/demo.png",
+    "60": "/style/icons/60/demo.png"
+  },
+  "orientation": "portrait-primary"
+}

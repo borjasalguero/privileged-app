@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <title>Privileged App</title>
+    <!-- App styles -->
+    
+    <link href="../shared/style_unstable/progress_activity.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="shared/style/input_areas.css">
+    <link rel="stylesheet" type="text/css" href="shared/style/headers.css">
+    <link rel="stylesheet" type="text/css" href="shared/style/buttons.css">
+    <link rel="stylesheet" type="text/css" href="style/app.css">
+    <!-- Scripts -->
+    <script defer src="js/overlay.js"></script>
+    <script defer src="js/app.js"></script>
+  </head>
+
+  <body role="application">
+    <section role="region">
+      <header class="view-header regular-header">
+        <h1>Demo app</h1>
+      </header>
+      <p>
+        This is a demo App for privileged API's. Check what easy is to use them!
+      </p>
+      <p id="demo-info">
+      </p>
+      <p>
+        <input type="tel" placeholder="Phone number" id="phone-number" required="">
+      </p>
+      <p>
+        <button id="send-sms" class="recommend">
+          Send SMS
+        </button>
+        <button id="call" class="recommend">
+          Call 
+        </button>
+      </p>
+    </section>
+    
+    <!-- Progress overlay -->
+    <section id="fxa-overlay" role="dialog">
+      <progress></progress>
+      <p id="fxa-overlay-msg">Connecting to Firefox</p>
+    </section>
+  </body>
+</html>
